@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="MED_Tool.Views.SettingView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center">
+                <TextBlock Text="MinecraftSavefilePath" FontSize="20" VerticalAlignment="Center"/>
+                <Button x:Name="ExplorerSelectButton" Height="20" Margin="10,0,0,0" Command="{Binding ExplorerSelectButton}" >
+                    <Image Source="/Resources/Images/Explorer.png" />
+                </Button>
+                <TextBox Name="MCSavePathTextBox" Text="{Binding MinecraftSavePath}" VerticalContentAlignment="Center" Height="20" MinWidth="250" Margin="10">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="LostFocus">
+                            <prism:InvokeCommandAction Command="{Binding MCSavePathTextBox_LostFocus}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center">
+                <TextBlock Text="Overlay Width" FontSize="20" VerticalAlignment="Center"/>
+                <TextBox x:Name="OverlayWidthTextBox" Text="{Binding OverlayWindowWidth}" VerticalContentAlignment="Center" Height="20" MinWidth="50" Margin="10" InputMethod.IsInputMethodEnabled="False" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="PreviewTextInput">
+                            <prism:InvokeCommandAction Command="{Binding OverlayWidthTextBox_PreviewTextInput}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="LostFocus">
+                            <prism:InvokeCommandAction Command="{Binding OverlayWidthTextBox_LostFocus}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center">
+                <TextBlock Text="Overlay BackgroundColor" FontSize="20" VerticalAlignment="Center"/>
+                <TextBox x:Name="OverlayBackgroundColorRTextBox" Text="{Binding OverlayBackgroundColorR}" VerticalContentAlignment="Center" Height="20" MinWidth="30" Margin="10" InputMethod.IsInputMethodEnabled="False" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="PreviewTextInput">
+                            <prism:InvokeCommandAction Command="{Binding OverlayBackgroundColorTextBox_PreviewTextInput}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="LostFocus">
+                            <prism:InvokeCommandAction Command="{Binding OverlayBackgroundColorRTextBox_LostFocus}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBox>
+                <TextBox x:Name="OverlayBackgroundColorGTextBox" Text="{Binding OverlayBackgroundColorG}" VerticalContentAlignment="Center" Height="20" MinWidth="30" Margin="10" InputMethod.IsInputMethodEnabled="False" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="PreviewTextInput">
+                            <prism:InvokeCommandAction Command="{Binding OverlayBackgroundColorTextBox_PreviewTextInput}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="LostFocus">
+                            <prism:InvokeCommandAction Command="{Binding OverlayBackgroundColorGTextBox_LostFocus}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBox>
+                <TextBox x:Name="OverlayBackgroundColorBTextBox" Text="{Binding OverlayBackgroundColorB}" VerticalContentAlignment="Center" Height="20" MinWidth="30" Margin="10" InputMethod.IsInputMethodEnabled="False" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="PreviewTextInput">
+                            <prism:InvokeCommandAction Command="{Binding OverlayBackgroundColorTextBox_PreviewTextInput}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="LostFocus">
+                            <prism:InvokeCommandAction Command="{Binding OverlayBackgroundColorBTextBox_LostFocus}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center">
+                <TextBlock Text="Overlay is top most" FontSize="20" VerticalAlignment="Center"/>
+                <CheckBox Name="IsTopMostCheckBox" Margin="10" VerticalAlignment="Center" IsChecked="{Binding OverlayIsTopMost}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <prism:InvokeCommandAction Command="{Binding IsTopMostCheckBox_Changed}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <prism:InvokeCommandAction Command="{Binding IsTopMostCheckBox_Changed}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+            </StackPanel>
+            <Button x:Name="StartButton" Content="Start" Width="60" Command="{Binding StartButton_Click}"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
+

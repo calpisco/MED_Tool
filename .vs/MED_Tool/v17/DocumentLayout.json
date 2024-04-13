@@ -1,0 +1,355 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\D_works\\visualstudio_projects\\MED_Tool\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\viewmodels\\overlayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\viewmodels\\overlayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\viewmodels\\advancementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\viewmodels\\advancementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\views\\overlayview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\views\\overlayview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\viewmodels\\settingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\viewmodels\\settingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\views\\overlayview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\views\\overlayview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\views\\settingview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\views\\settingview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\views\\settingview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\views\\settingview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\views\\advancementview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\views\\advancementview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\views\\advancementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\views\\advancementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\resources\\images\\advancements\\nether\\oh_shiny.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\resources\\images\\advancements\\nether\\oh_shiny.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\resources\\images\\frames\\frame_mc_normal_incomplete.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\resources\\images\\frames\\frame_mc_normal_incomplete.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\resources\\images\\frames\\frame_mc_normal_complete.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\resources\\images\\frames\\frame_mc_normal_complete.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\resources\\images\\frames\\frame_mc_challenge_incomplete.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\resources\\images\\frames\\frame_mc_challenge_incomplete.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\resources\\images\\frames\\frame_mc_challenge_complete.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\resources\\images\\frames\\frame_mc_challenge_complete.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\resources\\images\\advancements\\nether\\into_fire.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\resources\\images\\advancements\\nether\\into_fire.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|d:\\d_works\\visualstudio_projects\\med_tool\\med_tool\\common\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9221968F-BF21-4655-A85E-047CCA1BF75D}|MED_Tool\\MED_Tool.csproj|solutionrelative:med_tool\\common\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SettingViewModel.cs",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\ViewModels\\SettingViewModel.cs",
+              "RelativeDocumentMoniker": "MED_Tool\\ViewModels\\SettingViewModel.cs",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\ViewModels\\SettingViewModel.cs",
+              "RelativeToolTip": "MED_Tool\\ViewModels\\SettingViewModel.cs",
+              "ViewState": "AQIAAM4AAAAAAAAAAAAAAO8AAAAPAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T08:19:14.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SettingView.xaml",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\SettingView.xaml",
+              "RelativeDocumentMoniker": "MED_Tool\\Views\\SettingView.xaml",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\SettingView.xaml",
+              "RelativeToolTip": "MED_Tool\\Views\\SettingView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T04:39:45.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SettingView.xaml.cs",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\SettingView.xaml.cs",
+              "RelativeDocumentMoniker": "MED_Tool\\Views\\SettingView.xaml.cs",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\SettingView.xaml.cs",
+              "RelativeToolTip": "MED_Tool\\Views\\SettingView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T15:32:08.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OverlayView.xaml.cs",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\OverlayView.xaml.cs",
+              "RelativeDocumentMoniker": "MED_Tool\\Views\\OverlayView.xaml.cs",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\OverlayView.xaml.cs",
+              "RelativeToolTip": "MED_Tool\\Views\\OverlayView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T15:22:22.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdvancementView.xaml.cs",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\AdvancementView.xaml.cs",
+              "RelativeDocumentMoniker": "MED_Tool\\Views\\AdvancementView.xaml.cs",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\AdvancementView.xaml.cs",
+              "RelativeToolTip": "MED_Tool\\Views\\AdvancementView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T08:21:13.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MED_Tool\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MED_Tool\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T08:22:25.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "MED_Tool\\Properties\\Settings.settings",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Properties\\Settings.settings",
+              "RelativeToolTip": "MED_Tool\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-04-12T04:49:05.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdvancementViewModel.cs",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\ViewModels\\AdvancementViewModel.cs",
+              "RelativeDocumentMoniker": "MED_Tool\\ViewModels\\AdvancementViewModel.cs",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\ViewModels\\AdvancementViewModel.cs",
+              "RelativeToolTip": "MED_Tool\\ViewModels\\AdvancementViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwoAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T08:19:16.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OverlayViewModel.cs",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\ViewModels\\OverlayViewModel.cs",
+              "RelativeDocumentMoniker": "MED_Tool\\ViewModels\\OverlayViewModel.cs",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\ViewModels\\OverlayViewModel.cs",
+              "RelativeToolTip": "MED_Tool\\ViewModels\\OverlayViewModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADMAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T08:22:09.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OverlayView.xaml",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\OverlayView.xaml",
+              "RelativeDocumentMoniker": "MED_Tool\\Views\\OverlayView.xaml",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\OverlayView.xaml",
+              "RelativeToolTip": "MED_Tool\\Views\\OverlayView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-11T15:22:20.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MED_Tool\\Views\\MainWindow.xaml",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "MED_Tool\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T04:32:34.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdvancementView.xaml",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\AdvancementView.xaml",
+              "RelativeDocumentMoniker": "MED_Tool\\Views\\AdvancementView.xaml",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Views\\AdvancementView.xaml",
+              "RelativeToolTip": "MED_Tool\\Views\\AdvancementView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-09T08:22:30.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "MED_Tool\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "MED_Tool\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T08:19:17.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "into_fire.png - PNG [16x16, 32 \u30D3\u30C3\u30C8, PNG]",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Advancements\\Nether\\into_fire.png",
+              "RelativeDocumentMoniker": "MED_Tool\\Resources\\Images\\Advancements\\Nether\\into_fire.png",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Advancements\\Nether\\into_fire.png - PNG [16x16, 32 \u30D3\u30C3\u30C8, PNG]",
+              "RelativeToolTip": "MED_Tool\\Resources\\Images\\Advancements\\Nether\\into_fire.png - PNG [16x16, 32 \u30D3\u30C3\u30C8, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-12T03:51:22.03Z",
+              "EditorCaption": " - PNG [16x16, 32 \u30D3\u30C3\u30C8, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frame_mc_normal_complete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Frames\\frame_mc_normal_complete.png",
+              "RelativeDocumentMoniker": "MED_Tool\\Resources\\Images\\Frames\\frame_mc_normal_complete.png",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Frames\\frame_mc_normal_complete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "RelativeToolTip": "MED_Tool\\Resources\\Images\\Frames\\frame_mc_normal_complete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-12T03:51:34.247Z",
+              "EditorCaption": " - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frame_mc_normal_incomplete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Frames\\frame_mc_normal_incomplete.png",
+              "RelativeDocumentMoniker": "MED_Tool\\Resources\\Images\\Frames\\frame_mc_normal_incomplete.png",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Frames\\frame_mc_normal_incomplete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "RelativeToolTip": "MED_Tool\\Resources\\Images\\Frames\\frame_mc_normal_incomplete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-12T03:51:34.774Z",
+              "EditorCaption": " - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "oh_shiny.png - PNG [16x16, 32 \u30D3\u30C3\u30C8, PNG]",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Advancements\\Nether\\oh_shiny.png",
+              "RelativeDocumentMoniker": "MED_Tool\\Resources\\Images\\Advancements\\Nether\\oh_shiny.png",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Advancements\\Nether\\oh_shiny.png - PNG [16x16, 32 \u30D3\u30C3\u30C8, PNG]",
+              "RelativeToolTip": "MED_Tool\\Resources\\Images\\Advancements\\Nether\\oh_shiny.png - PNG [16x16, 32 \u30D3\u30C3\u30C8, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-12T03:51:13.01Z",
+              "EditorCaption": " - PNG [16x16, 32 \u30D3\u30C3\u30C8, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "frame_mc_challenge_complete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Frames\\frame_mc_challenge_complete.png",
+              "RelativeDocumentMoniker": "MED_Tool\\Resources\\Images\\Frames\\frame_mc_challenge_complete.png",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Frames\\frame_mc_challenge_complete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "RelativeToolTip": "MED_Tool\\Resources\\Images\\Frames\\frame_mc_challenge_complete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-12T03:51:11.104Z",
+              "EditorCaption": " - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "frame_mc_challenge_incomplete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Frames\\frame_mc_challenge_incomplete.png",
+              "RelativeDocumentMoniker": "MED_Tool\\Resources\\Images\\Frames\\frame_mc_challenge_incomplete.png",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Resources\\Images\\Frames\\frame_mc_challenge_incomplete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "RelativeToolTip": "MED_Tool\\Resources\\Images\\Frames\\frame_mc_challenge_incomplete.png - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-12T03:51:11.926Z",
+              "EditorCaption": " - PNG [26x26, 32 \u30D3\u30C3\u30C8, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\App.config",
+              "RelativeDocumentMoniker": "MED_Tool\\App.config",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\App.config",
+              "RelativeToolTip": "MED_Tool\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-11T15:32:08.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Common.cs",
+              "DocumentMoniker": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Common\\Common.cs",
+              "RelativeDocumentMoniker": "MED_Tool\\Common\\Common.cs",
+              "ToolTip": "D:\\D_works\\visualstudio_projects\\MED_Tool\\MED_Tool\\Common\\Common.cs",
+              "RelativeToolTip": "MED_Tool\\Common\\Common.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T15:22:58.559Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

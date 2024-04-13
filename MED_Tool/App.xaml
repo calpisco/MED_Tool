@@ -1,0 +1,14 @@
+﻿<prism:PrismApplication x:Class="MED_Tool.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MED_Tool"
+             xmlns:prism="http://prismlibrary.com/" >
+    <Application.Resources>
+        <ResourceDictionary>
+            <FontFamily x:Key="minecraft">
+                /MED_Tool;component/Resources/Fonts/minecraft.otf#minecraft
+            </FontFamily>
+            <SolidColorBrush x:Key="DarkMode" Color="Gray"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>

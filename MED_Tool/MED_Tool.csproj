@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\Fonts\minecraft.otf" />
+    <None Remove="Resources\Images\Advancements\End\free_the_end.png" />
+    <None Remove="Resources\Images\Advancements\End\the_end.png" />
+    <None Remove="Resources\Images\Advancements\Minecraft\acquire_hardware.png" />
+    <None Remove="Resources\Images\Advancements\Minecraft\eye_spy.png" />
+    <None Remove="Resources\Images\Advancements\Nether\a_terrible_fortress.png" />
+    <None Remove="Resources\Images\Advancements\Nether\into_fire.png" />
+    <None Remove="Resources\Images\Advancements\Nether\nether.png" />
+    <None Remove="Resources\Images\Advancements\Nether\oh_shiny.png" />
+    <None Remove="Resources\Images\Advancements\Nether\those_were_the_days.png" />
+    <None Remove="Resources\Images\Explorer.png" />
+    <None Remove="Resources\Images\Frames\frame_mc_challenge_complete.png" />
+    <None Remove="Resources\Images\Frames\frame_mc_challenge_incomplete.png" />
+    <None Remove="Resources\Images\Frames\frame_mc_normal_complete.png" />
+    <None Remove="Resources\Images\Frames\frame_mc_normal_incomplete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft-WindowsAPICodePack-Shell" Version="1.1.5" />
+    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\minecraft.otf" />
+    <Resource Include="Resources\Images\Advancements\End\free_the_end.png" />
+    <Resource Include="Resources\Images\Advancements\End\the_end.png" />
+    <Resource Include="Resources\Images\Advancements\Minecraft\acquire_hardware.png" />
+    <Resource Include="Resources\Images\Advancements\Minecraft\eye_spy.png" />
+    <Resource Include="Resources\Images\Advancements\Nether\a_terrible_fortress.png" />
+    <Resource Include="Resources\Images\Advancements\Nether\into_fire.png" />
+    <Resource Include="Resources\Images\Advancements\Nether\nether.png" />
+    <Resource Include="Resources\Images\Advancements\Nether\oh_shiny.png" />
+    <Resource Include="Resources\Images\Advancements\Nether\those_were_the_days.png" />
+    <Resource Include="Resources\Images\Explorer.png" />
+    <Resource Include="Resources\Images\Frames\frame_mc_challenge_complete.png" />
+    <Resource Include="Resources\Images\Frames\frame_mc_challenge_incomplete.png" />
+    <Resource Include="Resources\Images\Frames\frame_mc_normal_complete.png" />
+    <Resource Include="Resources\Images\Frames\frame_mc_normal_incomplete.png" />
+  </ItemGroup>
+</Project>
