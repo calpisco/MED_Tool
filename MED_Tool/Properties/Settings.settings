@@ -17,7 +17,7 @@
     <Setting Name="OverlayBackgroundColor" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">0, 170, 0</Value>
     </Setting>
-    <Setting Name="AdovancementIconSize" Type="System.Int32" Scope="User">
+    <Setting Name="AdvancementIconSize" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">32</Value>
     </Setting>
   </Settings>

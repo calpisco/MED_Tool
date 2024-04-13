@@ -86,12 +86,12 @@ namespace MED_Tool.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("32")]
-        public int AdovancementIconSize {
+        public int AdvancementIconSize {
             get {
-                return ((int)(this["AdovancementIconSize"]));
+                return ((int)(this["AdvancementIconSize"]));
             }
             set {
-                this["AdovancementIconSize"] = value;
+                this["AdvancementIconSize"] = value;
             }
         }
     }

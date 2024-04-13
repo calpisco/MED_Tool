@@ -35,13 +35,13 @@ namespace MED_Tool.ViewModels
                 SetProperty(ref _overlayWindowWidth, value);
             }
         }
-        private int _adovancementIconSize = Properties.Settings.Default.AdovancementIconSize;
-        public int AdovancementIconSize
+        private int _advancementIconSize = Properties.Settings.Default.AdvancementIconSize;
+        public int AdvancementIconSize
         {
-            get { return _adovancementIconSize; }
+            get { return _advancementIconSize; }
             set
             {
-                SetProperty(ref _adovancementIconSize, value);
+                SetProperty(ref _advancementIconSize, value);
             }
         }
 
@@ -124,10 +124,10 @@ namespace MED_Tool.ViewModels
         public DelegateCommand<RoutedEventArgs> OverlayBackgroundColorBTextBox_LostFocus =>
             _overlayBackgroundColorBTextBox_LostFocus ?? (_overlayBackgroundColorBTextBox_LostFocus = new DelegateCommand<RoutedEventArgs>(ExecuteOverlayBackgroundColorBTextBox_LostFocus));
 
-        // AdovancementIconSizeTextBox関連イベント
-        private DelegateCommand<RoutedEventArgs> _adovancementIconSizeTextBox_LostFocus;
-        public DelegateCommand<RoutedEventArgs> AdovancementIconSizeTextBox_LostFocus =>
-            _adovancementIconSizeTextBox_LostFocus ?? (_adovancementIconSizeTextBox_LostFocus = new DelegateCommand<RoutedEventArgs>(ExecuteAdovancementIconSizeTextBox_LostFocus));
+        // AdvancementIconSizeTextBox関連イベント
+        private DelegateCommand<RoutedEventArgs> _advancementIconSizeTextBox_LostFocus;
+        public DelegateCommand<RoutedEventArgs> AdvancementIconSizeTextBox_LostFocus =>
+            _advancementIconSizeTextBox_LostFocus ?? (_advancementIconSizeTextBox_LostFocus = new DelegateCommand<RoutedEventArgs>(ExecuteAdvancementIconSizeTextBox_LostFocus));
 
         private OverlayView ov = null;
 
@@ -168,20 +168,20 @@ namespace MED_Tool.ViewModels
                 ov.Width = OverlayWindowWidth;
             }
         }
-        private void ExecuteAdovancementIconSizeTextBox_LostFocus(RoutedEventArgs e)
+        private void ExecuteAdvancementIconSizeTextBox_LostFocus(RoutedEventArgs e)
         {
             // 念のため最大値を128に固定
-            if (AdovancementIconSize > Common.Common.ADVANCEMENT_ICON_SIZE_MAX)
+            if (AdvancementIconSize > Common.Common.ADVANCEMENT_ICON_SIZE_MAX)
             {
-                AdovancementIconSize = Common.Common.ADVANCEMENT_ICON_SIZE_MAX;
-            } else if (AdovancementIconSize < Common.Common.ADVANCEMENT_ICON_SIZE_MIN)
+                AdvancementIconSize = Common.Common.ADVANCEMENT_ICON_SIZE_MAX;
+            } else if (AdvancementIconSize < Common.Common.ADVANCEMENT_ICON_SIZE_MIN)
             {
                 // 最低値も16固定
-                AdovancementIconSize = Common.Common.ADVANCEMENT_ICON_SIZE_MIN;
+                AdvancementIconSize = Common.Common.ADVANCEMENT_ICON_SIZE_MIN;
             }
 
             // プロパティに保存
-            Properties.Settings.Default.AdovancementIconSize = AdovancementIconSize;
+            Properties.Settings.Default.AdvancementIconSize = AdvancementIconSize;
             Properties.Settings.Default.Save();
 
             // 既に表示している場合、各進捗のサイズを変える
@@ -189,12 +189,12 @@ namespace MED_Tool.ViewModels
             {
                 foreach(AdvancementView av in ((OverlayViewModel)ov.DataContext).Advancements)
                 {
-                    av.Advancements.Width = AdovancementIconSize;
-                    av.Advancements.Height = AdovancementIconSize;
-                    av.AdvancementsFrame.Width = AdovancementIconSize + AdovancementIconSize * 0.625;
-                    av.AdvancementsFrame.Height = AdovancementIconSize + AdovancementIconSize * 0.625;
-                    av.AdvancementsFrameComplete.Width = AdovancementIconSize + AdovancementIconSize * 0.625;
-                    av.AdvancementsFrameComplete.Height = AdovancementIconSize + AdovancementIconSize * 0.625;
+                    av.Advancements.Width = AdvancementIconSize;
+                    av.Advancements.Height = AdvancementIconSize;
+                    av.AdvancementsFrame.Width = AdvancementIconSize + AdvancementIconSize * 0.625;
+                    av.AdvancementsFrame.Height = AdvancementIconSize + AdvancementIconSize * 0.625;
+                    av.AdvancementsFrameComplete.Width = AdvancementIconSize + AdvancementIconSize * 0.625;
+                    av.AdvancementsFrameComplete.Height = AdvancementIconSize + AdvancementIconSize * 0.625;
                 }
             }
         }

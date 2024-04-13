@@ -79,14 +79,14 @@
                 </CheckBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center">
-                <TextBlock Text="Adovancements icon size" FontSize="20" VerticalAlignment="Center"/>
-                <TextBox x:Name="AdovancementIconSizeTextBox" Text="{Binding AdovancementIconSize}" VerticalContentAlignment="Center" Height="20" MinWidth="50" Margin="10" InputMethod.IsInputMethodEnabled="False" >
+                <TextBlock Text="Advancements icon size" FontSize="20" VerticalAlignment="Center"/>
+                <TextBox x:Name="AdvancementIconSizeTextBox" Text="{Binding AdvancementIconSize}" VerticalContentAlignment="Center" Height="20" MinWidth="50" Margin="10" InputMethod.IsInputMethodEnabled="False" >
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="PreviewTextInput">
                             <prism:InvokeCommandAction Command="{Binding TextBoxIntOnly_PreviewTextInput}"/>
                         </i:EventTrigger>
                         <i:EventTrigger EventName="LostFocus">
-                            <prism:InvokeCommandAction Command="{Binding AdovancementIconSizeTextBox_LostFocus}"/>
+                            <prism:InvokeCommandAction Command="{Binding AdvancementIconSizeTextBox_LostFocus}"/>
                         </i:EventTrigger>
                     </i:Interaction.Triggers>
                 </TextBox>
