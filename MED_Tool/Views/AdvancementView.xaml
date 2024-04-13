@@ -2,11 +2,11 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"             
-             prism:ViewModelLocator.AutoWireViewModel="True">
+             prism:ViewModelLocator.AutoWireViewModel="True" RenderOptions.BitmapScalingMode="NearestNeighbor" RenderOptions.EdgeMode="Aliased" >
     <Grid>
-        <Image x:Name="AdvancementsFrame" Source="/Resources/Images/Frames/frame_mc_normal_incomplete.png" Height="36" Width="36" />
-        <Image x:Name="AdvancementsFrameComplete" Source="/Resources/Images/Frames/frame_mc_normal_complete.png" Height="36" Width="36" Visibility="Hidden" />
-        <Image x:Name="Advancements" Source="/Resources/Images/Advancements/Minecraft/acquire_hardware.png" Height="26" Width="26" />
+        <Image x:Name="AdvancementsFrame" Source="/Resources/Images/Frames/frame_mc_normal_incomplete.png" Height="42" Width="42" />
+        <Image x:Name="AdvancementsFrameComplete" Source="/Resources/Images/Frames/frame_mc_normal_complete.png" Height="42" Width="42" Visibility="Hidden" />
+        <Image x:Name="Advancements" Source="/Resources/Images/Advancements/Minecraft/acquire_hardware.png" Height="32" Width="32" />
 
     </Grid>
 </UserControl>

@@ -17,5 +17,8 @@ namespace MED_Tool.Common
             JAPANESE, ENGLISH
         }
         public const int FOUR_K_WIDTH = 3840;
+
+        public const int ADVANCEMENT_ICON_SIZE_MAX = 128;
+        public const int ADVANCEMENT_ICON_SIZE_MIN = 16;
     }
 }

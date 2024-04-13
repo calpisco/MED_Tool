@@ -82,5 +82,17 @@ namespace MED_Tool.Properties {
                 this["OverlayBackgroundColor"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("32")]
+        public int AdovancementIconSize {
+            get {
+                return ((int)(this["AdovancementIconSize"]));
+            }
+            set {
+                this["AdovancementIconSize"] = value;
+            }
+        }
     }
 }

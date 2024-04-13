@@ -62,18 +62,18 @@ namespace MED_Tool.ViewModels
                     // 進捗情報を取得
                     var advancementsJsonData = File.ReadAllText(Directory.GetFiles(lastSavedDirectory + @"\advancements\").First());
 
-                    foreach (var advancement in Advancements)
+                    foreach (AdvancementView advancement in Advancements)
                     {
                         // 各タグ情報と一致があれば進捗状況の見た目を変更
                         advancement.Dispatcher.Invoke((Action)(() =>
                         {
                             if (advancementsJsonData.Contains((string)advancement.Tag))
                             {
-                                ((AdvancementView)advancement).ChangedAdvancementComplete(Visibility.Visible);
+                                advancement.ChangedAdvancementComplete(Visibility.Visible);
                             }
                             else
                             {
-                                ((AdvancementView)advancement).ChangedAdvancementComplete(Visibility.Hidden);
+                                advancement.ChangedAdvancementComplete(Visibility.Hidden);
 
                             }
                         }));

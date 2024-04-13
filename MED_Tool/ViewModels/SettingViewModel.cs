@@ -19,9 +19,11 @@ namespace MED_Tool.ViewModels
     public class SettingViewModel : BindableBase
     {
         private string _minecraftSavePath = Properties.Settings.Default.MinecraftSavePath;
-        public string MinecraftSavePath {  
+        public string MinecraftSavePath
+        {
             get { return _minecraftSavePath; }
-            set { 
+            set
+            {
                 SetProperty(ref _minecraftSavePath, value);
             }
         }
@@ -31,6 +33,15 @@ namespace MED_Tool.ViewModels
             get { return _overlayWindowWidth; }
             set { 
                 SetProperty(ref _overlayWindowWidth, value);
+            }
+        }
+        private int _adovancementIconSize = Properties.Settings.Default.AdovancementIconSize;
+        public int AdovancementIconSize
+        {
+            get { return _adovancementIconSize; }
+            set
+            {
+                SetProperty(ref _adovancementIconSize, value);
             }
         }
 
@@ -77,9 +88,9 @@ namespace MED_Tool.ViewModels
             _startButton_Click ?? (_startButton_Click = new DelegateCommand<RoutedEventArgs>(ExecuteStartButton_Click));
 
         // overlayWidthTextBox関連イベント
-        private DelegateCommand<TextCompositionEventArgs> _overlayWidthTextBox_PreviewTextInput;
-        public DelegateCommand<TextCompositionEventArgs> OverlayWidthTextBox_PreviewTextInput =>
-            _overlayWidthTextBox_PreviewTextInput ?? (_overlayWidthTextBox_PreviewTextInput = new DelegateCommand<TextCompositionEventArgs>(ExecuteOverlayWidthTextBox_PreviewTextInput));
+        private DelegateCommand<TextCompositionEventArgs> _textBoxIntOnly_PreviewTextInput;
+        public DelegateCommand<TextCompositionEventArgs> TextBoxIntOnly_PreviewTextInput =>
+            _textBoxIntOnly_PreviewTextInput ?? (_textBoxIntOnly_PreviewTextInput = new DelegateCommand<TextCompositionEventArgs>(ExecuteTextBoxIntOnly_PreviewTextInput));
         private DelegateCommand<RoutedEventArgs> _overlayWidthTextBox_LostFocus;
         public DelegateCommand<RoutedEventArgs> OverlayWidthTextBox_LostFocus =>
             _overlayWidthTextBox_LostFocus ?? (_overlayWidthTextBox_LostFocus = new DelegateCommand<RoutedEventArgs>(ExecuteOverlayWidthTextBox_LostFocus));
@@ -113,6 +124,11 @@ namespace MED_Tool.ViewModels
         public DelegateCommand<RoutedEventArgs> OverlayBackgroundColorBTextBox_LostFocus =>
             _overlayBackgroundColorBTextBox_LostFocus ?? (_overlayBackgroundColorBTextBox_LostFocus = new DelegateCommand<RoutedEventArgs>(ExecuteOverlayBackgroundColorBTextBox_LostFocus));
 
+        // AdovancementIconSizeTextBox関連イベント
+        private DelegateCommand<RoutedEventArgs> _adovancementIconSizeTextBox_LostFocus;
+        public DelegateCommand<RoutedEventArgs> AdovancementIconSizeTextBox_LostFocus =>
+            _adovancementIconSizeTextBox_LostFocus ?? (_adovancementIconSizeTextBox_LostFocus = new DelegateCommand<RoutedEventArgs>(ExecuteAdovancementIconSizeTextBox_LostFocus));
+
         private OverlayView ov = null;
 
         public SettingViewModel()
@@ -129,7 +145,7 @@ namespace MED_Tool.ViewModels
                 ov.Show();
             }
         }
-        private void ExecuteOverlayWidthTextBox_PreviewTextInput(TextCompositionEventArgs e)
+        private void ExecuteTextBoxIntOnly_PreviewTextInput(TextCompositionEventArgs e)
         {
             // 0-9のみ
             e.Handled = !new Regex("[0-9]").IsMatch(e.Text);
@@ -152,6 +168,37 @@ namespace MED_Tool.ViewModels
                 ov.Width = OverlayWindowWidth;
             }
         }
+        private void ExecuteAdovancementIconSizeTextBox_LostFocus(RoutedEventArgs e)
+        {
+            // 念のため最大値を128に固定
+            if (AdovancementIconSize > Common.Common.ADVANCEMENT_ICON_SIZE_MAX)
+            {
+                AdovancementIconSize = Common.Common.ADVANCEMENT_ICON_SIZE_MAX;
+            } else if (AdovancementIconSize < Common.Common.ADVANCEMENT_ICON_SIZE_MIN)
+            {
+                // 最低値も16固定
+                AdovancementIconSize = Common.Common.ADVANCEMENT_ICON_SIZE_MIN;
+            }
+
+            // プロパティに保存
+            Properties.Settings.Default.AdovancementIconSize = AdovancementIconSize;
+            Properties.Settings.Default.Save();
+
+            // 既に表示している場合、各進捗のサイズを変える
+            if (ov != null)
+            {
+                foreach(AdvancementView av in ((OverlayViewModel)ov.DataContext).Advancements)
+                {
+                    av.Advancements.Width = AdovancementIconSize;
+                    av.Advancements.Height = AdovancementIconSize;
+                    av.AdvancementsFrame.Width = AdovancementIconSize + AdovancementIconSize * 0.625;
+                    av.AdvancementsFrame.Height = AdovancementIconSize + AdovancementIconSize * 0.625;
+                    av.AdvancementsFrameComplete.Width = AdovancementIconSize + AdovancementIconSize * 0.625;
+                    av.AdvancementsFrameComplete.Height = AdovancementIconSize + AdovancementIconSize * 0.625;
+                }
+            }
+        }
+
         private void ExecuteExplorerSelectButton_Click(RoutedEventArgs e)
         {
             var dlg = new MSAPI::Dialogs.CommonOpenFileDialog();

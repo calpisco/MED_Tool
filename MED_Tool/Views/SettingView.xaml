@@ -24,7 +24,7 @@
                 <TextBox x:Name="OverlayWidthTextBox" Text="{Binding OverlayWindowWidth}" VerticalContentAlignment="Center" Height="20" MinWidth="50" Margin="10" InputMethod.IsInputMethodEnabled="False" >
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="PreviewTextInput">
-                            <prism:InvokeCommandAction Command="{Binding OverlayWidthTextBox_PreviewTextInput}"/>
+                            <prism:InvokeCommandAction Command="{Binding TextBoxIntOnly_PreviewTextInput}"/>
                         </i:EventTrigger>
                         <i:EventTrigger EventName="LostFocus">
                             <prism:InvokeCommandAction Command="{Binding OverlayWidthTextBox_LostFocus}"/>
@@ -77,6 +77,20 @@
                         </i:EventTrigger>
                     </i:Interaction.Triggers>
                 </CheckBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center">
+                <TextBlock Text="Adovancements icon size" FontSize="20" VerticalAlignment="Center"/>
+                <TextBox x:Name="AdovancementIconSizeTextBox" Text="{Binding AdovancementIconSize}" VerticalContentAlignment="Center" Height="20" MinWidth="50" Margin="10" InputMethod.IsInputMethodEnabled="False" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="PreviewTextInput">
+                            <prism:InvokeCommandAction Command="{Binding TextBoxIntOnly_PreviewTextInput}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="LostFocus">
+                            <prism:InvokeCommandAction Command="{Binding AdovancementIconSizeTextBox_LostFocus}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBox>
+                <TextBlock Text="px" FontSize="20" VerticalAlignment="Center"/>
             </StackPanel>
             <Button x:Name="StartButton" Content="Start" Width="60" Command="{Binding StartButton_Click}"/>
         </StackPanel>

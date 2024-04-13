@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"             
              xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
-             prism:ViewModelLocator.AutoWireViewModel="True" Height="200" Background="#00aa00" ResizeMode="NoResize" Title="AdvancementsOverlay" >
+             prism:ViewModelLocator.AutoWireViewModel="True" Height="250" Background="#00aa00" ResizeMode="NoResize" Title="AdvancementsOverlay" RenderOptions.BitmapScalingMode="NearestNeighbor" RenderOptions.EdgeMode="Aliased" >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
