@@ -30,6 +30,11 @@ namespace MED_Tool.ViewModels
         // 1秒間隔でSaveファイルを見に行く
         Timer timer = new Timer(1000);
 
+        // 実績表示Listbox系イベント
+        private DelegateCommand<SelectionChangedEventArgs> _listBox_SelectionChanged;
+        public DelegateCommand<SelectionChangedEventArgs> ListBox_SelectionChanged =>
+            _listBox_SelectionChanged ?? (_listBox_SelectionChanged = new DelegateCommand<SelectionChangedEventArgs>(ExecuteListBox_SelectionChanged));
+
         public OverlayViewModel()
         {
             // 実績を入れていく
@@ -74,14 +79,17 @@ namespace MED_Tool.ViewModels
                         }));
 
                     }
-                } catch(Exception ex)
+                }
+                catch(Exception ex)
                 {
                     Debug.WriteLine(ex.ToString());
                 }
-
             };
-
             timer.Start();
+        }
+        private void ExecuteListBox_SelectionChanged(SelectionChangedEventArgs e)
+        {
+            ((ListBox)e.Source).SelectedIndex = -1;
         }
     }
 }

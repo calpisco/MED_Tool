@@ -4,7 +4,7 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <Image x:Name="AdvancementsFrame" Source="/Resources/Images/Frames/frame_mc_normal_incomplete.png" Height="36" Width="36"/>
+        <Image x:Name="AdvancementsFrame" Source="/Resources/Images/Frames/frame_mc_normal_incomplete.png" Height="36" Width="36" />
         <Image x:Name="AdvancementsFrameComplete" Source="/Resources/Images/Frames/frame_mc_normal_complete.png" Height="36" Width="36" Visibility="Hidden" />
         <Image x:Name="Advancements" Source="/Resources/Images/Advancements/Minecraft/acquire_hardware.png" Height="26" Width="26" />
 
