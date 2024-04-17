@@ -13,6 +13,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using MSAPI = Microsoft.WindowsAPICodePack;
+using static MED_Tool.Common.Common;
 
 namespace MED_Tool.ViewModels
 {
@@ -82,6 +83,88 @@ namespace MED_Tool.ViewModels
             }
         }
 
+        private bool _isAcquireHardware = (Properties.Settings.Default.AdvancementsViewFlg & (int)ADVANCEMENT_FLG.ACQUIRE_HARDWARE) != 0;
+        public bool IsAcquireHardware
+        {
+            get { return _isAcquireHardware; }
+            set
+            {
+                SetProperty(ref _isAcquireHardware, value);
+            }
+        }
+        private bool _isNether = (Properties.Settings.Default.AdvancementsViewFlg & (int)ADVANCEMENT_FLG.NETHER) != 0;
+        public bool IsNether
+        {
+            get { return _isNether; }
+            set
+            {
+                SetProperty(ref _isNether, value);
+            }
+        }
+        private bool _isThoseWereTheDays = (Properties.Settings.Default.AdvancementsViewFlg & (int)ADVANCEMENT_FLG.THOSE_WERE_THE_DAYS) != 0;
+        public bool IsThoseWereTheDays
+        {
+            get { return _isThoseWereTheDays; }
+            set
+            {
+                SetProperty(ref _isThoseWereTheDays, value);
+            }
+        }
+        private bool _isOhShiny = (Properties.Settings.Default.AdvancementsViewFlg & (int)ADVANCEMENT_FLG.OH_SHINY) != 0;
+        public bool IsOhShiny
+        {
+            get { return _isOhShiny; }
+            set
+            {
+                SetProperty(ref _isOhShiny, value);
+            }
+        }
+        private bool _isATerribleFortress = (Properties.Settings.Default.AdvancementsViewFlg & (int)ADVANCEMENT_FLG.A_TERRIBLE_FORTRESS) != 0;
+        public bool IsATerribleFortress
+        {
+            get { return _isATerribleFortress; }
+            set
+            {
+                SetProperty(ref _isATerribleFortress, value);
+            }
+        }
+        private bool _isIntoFire = (Properties.Settings.Default.AdvancementsViewFlg & (int)ADVANCEMENT_FLG.INTO_FIRE) != 0;
+        public bool IsIntoFire
+        {
+            get { return _isIntoFire; }
+            set
+            {
+                SetProperty(ref _isIntoFire, value);
+            }
+        }
+        private bool _isEyeSpy = (Properties.Settings.Default.AdvancementsViewFlg & (int)ADVANCEMENT_FLG.EYE_SPY) != 0;
+        public bool IsEyeSpy
+        {
+            get { return _isEyeSpy; }
+            set
+            {
+                SetProperty(ref _isEyeSpy, value);
+            }
+        }
+        private bool _isTheEnd = (Properties.Settings.Default.AdvancementsViewFlg & (int)ADVANCEMENT_FLG.THE_END) != 0;
+        public bool IsTheEnd
+        {
+            get { return _isTheEnd; }
+            set
+            {
+                SetProperty(ref _isTheEnd, value);
+            }
+        }
+        private bool _isFreeTheEnd = (Properties.Settings.Default.AdvancementsViewFlg & (int)ADVANCEMENT_FLG.FREE_THE_END) != 0;
+        public bool IsFreeTheEnd
+        {
+            get { return _isFreeTheEnd; }
+            set
+            {
+                SetProperty(ref _isFreeTheEnd, value);
+            }
+        }
+
         // startButton関連イベント
         private DelegateCommand<RoutedEventArgs> _startButton_Click;
         public DelegateCommand<RoutedEventArgs> StartButton_Click =>
@@ -128,6 +211,11 @@ namespace MED_Tool.ViewModels
         private DelegateCommand<RoutedEventArgs> _advancementIconSizeTextBox_LostFocus;
         public DelegateCommand<RoutedEventArgs> AdvancementIconSizeTextBox_LostFocus =>
             _advancementIconSizeTextBox_LostFocus ?? (_advancementIconSizeTextBox_LostFocus = new DelegateCommand<RoutedEventArgs>(ExecuteAdvancementIconSizeTextBox_LostFocus));
+
+        // Show Advancement関連イベント
+        private DelegateCommand<RoutedEventArgs> _showAdvancementCheckBoxes_Changed;
+        public DelegateCommand<RoutedEventArgs> ShowAdvancementCheckBoxes_Changed =>
+            _showAdvancementCheckBoxes_Changed ?? (_showAdvancementCheckBoxes_Changed = new DelegateCommand<RoutedEventArgs>(ExecuteShowAdvancementCheckBoxes_Changed));
 
         private OverlayView ov = null;
 
@@ -232,6 +320,39 @@ namespace MED_Tool.ViewModels
             if (ov != null)
             {
                 ov.Topmost = OverlayIsTopMost;
+            }
+        }
+        private void ExecuteShowAdvancementCheckBoxes_Changed(RoutedEventArgs e)
+        {
+            // フラグを設定
+            int setFlg = 0;
+            setFlg |= IsAcquireHardware ? (int)ADVANCEMENT_FLG.ACQUIRE_HARDWARE : 0;
+            setFlg |= IsNether ? (int)ADVANCEMENT_FLG.NETHER : 0;
+            setFlg |= IsThoseWereTheDays ? (int)ADVANCEMENT_FLG.THOSE_WERE_THE_DAYS : 0;
+            setFlg |= IsOhShiny ? (int)ADVANCEMENT_FLG.OH_SHINY : 0;
+            setFlg |= IsATerribleFortress ? (int)ADVANCEMENT_FLG.A_TERRIBLE_FORTRESS : 0;
+            setFlg |= IsIntoFire ? (int)ADVANCEMENT_FLG.INTO_FIRE : 0;
+            setFlg |= IsEyeSpy ? (int)ADVANCEMENT_FLG.EYE_SPY : 0;
+            setFlg |= IsTheEnd ? (int)ADVANCEMENT_FLG.THE_END : 0;
+            setFlg |= IsFreeTheEnd ? (int)ADVANCEMENT_FLG.FREE_THE_END : 0;
+
+            // プロパティに保存
+            Properties.Settings.Default.AdvancementsViewFlg = (short)setFlg;
+            Properties.Settings.Default.Save();
+
+            // 既に表示している場合、各進捗の表示を変更する
+            if (ov != null)
+            {
+                foreach (AdvancementView av in ((OverlayViewModel)ov.DataContext).Advancements)
+                {
+                    if ((Properties.Settings.Default.AdvancementsViewFlg & ((AdvancementViewModel)av.DataContext).AdvancementFlg) != 0)
+                    {
+                        av.Visibility = Visibility.Visible;
+                    } else
+                    {
+                        av.Visibility = Visibility.Collapsed;
+                    }
+                }
             }
         }
         private void ExecuteOverlayBackgroundColorTextBox_PreviewTextInput(TextCompositionEventArgs e)

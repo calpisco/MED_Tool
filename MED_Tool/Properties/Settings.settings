@@ -20,5 +20,8 @@
     <Setting Name="AdvancementIconSize" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">32</Value>
     </Setting>
+    <Setting Name="AdvancementsViewFlg" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">511</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

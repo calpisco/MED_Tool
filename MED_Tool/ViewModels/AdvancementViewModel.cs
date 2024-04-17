@@ -8,8 +8,14 @@ using System.Windows;
 namespace MED_Tool.ViewModels
 {
 	public class AdvancementViewModel : BindableBase
-	{
-		public AdvancementViewModel()
+    {
+        private int _advancementFlg = 0;
+        public int AdvancementFlg
+        {
+            get { return _advancementFlg; }
+            set { SetProperty(ref _advancementFlg, value); }
+        }
+        public AdvancementViewModel()
 		{
 
 		}

@@ -4,7 +4,7 @@
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
-        Title="MED_Tool" Height="400" Width="800" >
+        Title="MED_Tool" Height="500" Width="800" >
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Closed">
             <prism:InvokeCommandAction Command="{Binding Closed}"/>

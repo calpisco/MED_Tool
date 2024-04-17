@@ -9,16 +9,17 @@ using System.Timers;
 using System.IO;
 using System.Diagnostics;
 using System.Windows;
+using static MED_Tool.Common.Common;
 
 namespace MED_Tool.ViewModels
 {
     public class OverlayViewModel : BindableBase
     {
-        private int _overlay_window_width = Properties.Settings.Default.OverlayWindowWidth;
+        private int _overlayWindowWidth = Properties.Settings.Default.OverlayWindowWidth;
         public int OverlayWindowWidth
         {
-            get { return _overlay_window_width; }
-            set { SetProperty(ref _overlay_window_width, value); }
+            get { return _overlayWindowWidth; }
+            set { SetProperty(ref _overlayWindowWidth, value); }
         }
         private List<UserControl> _advancements = new List<UserControl>();
         public List<UserControl> Advancements
@@ -38,20 +39,19 @@ namespace MED_Tool.ViewModels
         public OverlayViewModel()
         {
             // 実績を入れていく
-            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Minecraft/acquire_hardware.png", "story/smelt_iron"));
-            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Nether/nether.png", "nether/root"));
-            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Nether/those_were_the_days.png", "nether/find_bastion"));
-            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Nether/oh_shiny.png", "nether/distract_piglin"));
-            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Nether/a_terrible_fortress.png", "nether/find_fortress"));
-            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Nether/into_fire.png", "nether/obtain_blaze_rod"));
-            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Minecraft/eye_spy.png", "story/follow_ender_eye"));
-            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/End/the_end.png", "end/root"));
-            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/End/free_the_end.png", "end/kill_dragon"));
+            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Minecraft/acquire_hardware.png", "story/smelt_iron", (int)ADVANCEMENT_FLG.ACQUIRE_HARDWARE));
+            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Nether/nether.png", "nether/root", (int)ADVANCEMENT_FLG.NETHER));
+            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Nether/those_were_the_days.png", "nether/find_bastion", (int)ADVANCEMENT_FLG.THOSE_WERE_THE_DAYS));
+            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Nether/oh_shiny.png", "nether/distract_piglin", (int)ADVANCEMENT_FLG.OH_SHINY));
+            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Nether/a_terrible_fortress.png", "nether/find_fortress", (int)ADVANCEMENT_FLG.A_TERRIBLE_FORTRESS));
+            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Nether/into_fire.png", "nether/obtain_blaze_rod", (int)ADVANCEMENT_FLG.INTO_FIRE));
+            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/Minecraft/eye_spy.png", "story/follow_ender_eye", (int)ADVANCEMENT_FLG.EYE_SPY));
+            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/End/the_end.png", "end/root", (int)ADVANCEMENT_FLG.THE_END));
+            Advancements.Add(new AdvancementView("/Resources/Images/Advancements/End/free_the_end.png", "end/kill_dragon", (int)ADVANCEMENT_FLG.FREE_THE_END));
 
             // ファイルを見に行く処理
             timer.Elapsed += (sender, e) =>
             {
-                Debug.WriteLine("hello!!");
                 // 一番新しいディレクトリを取得
                 var lastSavedDirectory = Directory.GetDirectories(Properties.Settings.Default.MinecraftSavePath)
                     .OrderByDescending(f => File.GetLastWriteTime(f)).First();
@@ -74,7 +74,6 @@ namespace MED_Tool.ViewModels
                             else
                             {
                                 advancement.ChangedAdvancementComplete(Visibility.Hidden);
-
                             }
                         }));
 

@@ -94,5 +94,17 @@ namespace MED_Tool.Properties {
                 this["AdvancementIconSize"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("511")]
+        public short AdvancementsViewFlg {
+            get {
+                return ((short)(this["AdvancementsViewFlg"]));
+            }
+            set {
+                this["AdvancementsViewFlg"] = value;
+            }
+        }
     }
 }

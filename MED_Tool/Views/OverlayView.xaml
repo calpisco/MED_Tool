@@ -24,6 +24,15 @@
                     <prism:InvokeCommandAction Command="{Binding ListBox_SelectionChanged}"/>
                 </i:EventTrigger>
             </i:Interaction.Triggers>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="{x:Type ListBoxItem}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Visibility}" Value="Collapsed">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ListBox.ItemContainerStyle>
         </ListBox>
     </Grid>
 </Window>

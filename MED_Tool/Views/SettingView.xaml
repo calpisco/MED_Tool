@@ -92,7 +92,102 @@
                 </TextBox>
                 <TextBlock Text="px" FontSize="20" VerticalAlignment="Center"/>
             </StackPanel>
-            <Button x:Name="StartButton" Content="Start" Width="60" Command="{Binding StartButton_Click}"/>
+            <TextBlock Text="Show Advancement" FontSize="20" VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,5" VerticalAlignment="Center">
+                <CheckBox Content="Acquire Hardware" Margin="5,0" IsChecked="{Binding IsAcquireHardware}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+                <CheckBox Content="Nether" Margin="5,0" IsChecked="{Binding IsNether}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+                <CheckBox Content="Those Were the Days" Margin="5,0" IsChecked="{Binding IsThoseWereTheDays}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+                <CheckBox Content="Oh Shiny" Margin="5,0" IsChecked="{Binding IsOhShiny}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,5" VerticalAlignment="Center" >
+                <CheckBox Content="A Terrible Fortress" Margin="5,0" IsChecked="{Binding IsATerribleFortress}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+                <CheckBox Content="Into Fire" Margin="5,0" IsChecked="{Binding IsIntoFire}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+                <CheckBox Content="Eye Spy" Margin="5,0" IsChecked="{Binding IsEyeSpy}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+                <CheckBox Content="The End" Margin="5,0" IsChecked="{Binding IsTheEnd}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+                <CheckBox Content="Free the End" Margin="5,0" IsChecked="{Binding IsFreeTheEnd}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Checked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="Unchecked">
+                            <prism:InvokeCommandAction Command="{Binding ShowAdvancementCheckBoxes_Changed}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </CheckBox>
+            </StackPanel>
+            <Button x:Name="StartButton" Content="Start" Width="60" Command="{Binding StartButton_Click}" Margin="10"/>
         </StackPanel>
 
     </Grid>
